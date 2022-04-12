@@ -5,15 +5,22 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Stek stek = new Stek(3);
-		stek.dodaj(10);
-		System.out.println("Uklonjena vrednost je: " + stek.ukloni());
+		//stek.dodaj(10);
+		//System.out.println("Uklonjena vrednost je: " + stek.ukloni());
 		
-		Operacija[] operacije = { new Dodavanje(5), new Dodavanje(-7), new Sabiranje() };
+		Program program = new Program(stek);
+		
+		Operacija[] operacije = { new Dodavanje(5), new Dodavanje(4), new Dodavanje(2),
+				new Sabiranje(), new Uklanjanje(1), new Dodavanje(4), new Maksimum() };
 		for(Operacija operacija : operacije) {
-			operacija.izvrsi(stek);
-			System.out.println(stek);
+			//operacija.izvrsi(stek);
+			//System.out.println(stek);
+			program.dodaj(operacija);
 		}
-
+		
+		program.izvrsi();
+		System.out.println(stek);
+		
 	}
-
+	
 }
