@@ -20,5 +20,21 @@ operacije dodavanja, sadržana celobrojna vrednost se dodaje na vrh zadatog stek
 vrha zadatog steka, a potom se njihov zbir dodaje na vrh zadatog steka.
 
 -----------------------------
+• *Maksimum* je operacija. Izvršavanjem operacije maksimuma, uklanjaju se dve vrednosti sa
+vrha zadatog steka, a potom se veća od njih dodaje na vrh zadatog steka.
+
+-----------------------------
+• *Uklanjanje* je operacija koja se stvara sa zadatim nenegativnim celobrojnim stepenom
+uklanjanja. U slučaju da stepen uklanjanja nije pozitivan broj, za stepen uklanjanja uzeti 1.
+Izvršavanjem operacije uklanjanja, sa zadatog steka se uklanja određen broj vrednosti koji je
+određen stepenom uklanjanja.
+
+-----------------------------
+• *Program* sadrži stek i proizvoljan broj operacija. Pri stvaranju program ne sadrži ni
+jednu operaciju. Moguće je dodati zadatu operaciju u program. Moguće je izvršiti program
+tako što se sve sadržane operacije izvršavaju po redosledu dodavanja nad sadržanim
+stekom.
+
+-----------------------------
 Priložena je klasa sa glavnom funkcijom koja ispituje osnovne funkcionalnosti paketa klasa uz
 ispisivanje rezultata na standardnom izlazu (konzoli).
